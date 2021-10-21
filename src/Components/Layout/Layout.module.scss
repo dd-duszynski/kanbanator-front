@@ -1,0 +1,15 @@
+@import '../../Styles/variables.scss';
+
+.Layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: auto 1fr;
+}
+
+.main {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: $main-gray;
+  padding: 1rem;
+}

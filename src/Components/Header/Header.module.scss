@@ -1,0 +1,20 @@
+@import '../../Styles/variables.scss';
+
+.header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: $main-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home {
+  font-size: $fs-h1;
+  color: $white;
+  margin-left: 5rem;
+}
+
+.userIconBox {
+  margin-right: 5rem;
+}

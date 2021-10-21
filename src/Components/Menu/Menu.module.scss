@@ -1,0 +1,60 @@
+@import '../../Styles/variables.scss';
+
+.menu {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  width: 5rem;
+  background-color: $gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  user-select: none;
+  max-height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh
+}
+
+.menuIsOpen {
+  width: 15rem;
+  max-height: 100vh;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  font-size: $fs-body1;
+  width: 100%;
+  padding: 1rem 0;
+
+  &:hover {
+    background-color: $light-gray;
+  }
+
+  svg {
+    margin: 0 1.3rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.menuItemsBox {
+  margin-top: 6rem;
+}
+
+.arrowIconBox {
+  height: 4rem;
+  cursor: pointer;
+  background-color: $light-gray;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+
+  svg {
+    height: 2rem;
+    width: 2rem;
+  }
+}
